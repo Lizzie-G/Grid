@@ -1,3 +1,7 @@
+body{
+    background-color: azure;
+}
+
 .grid .header{
     background-color: orange;
     grid-area: header;
