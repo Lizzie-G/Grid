@@ -1,0 +1,41 @@
+.grid .header{
+    background-color: orange;
+    grid-area: header;
+}
+
+.grid .aside{
+    background-color: yellow;
+    grid-area: aside;
+}
+
+.grid .content{
+    background-color: greenyellow;
+    grid-area: conten;
+}
+
+.grid .widget1{
+    background-color: purple;
+    grid-area: widget1;
+}
+
+.grid .widget2{
+    background-color: blue;
+    grid-area: widget2;
+}
+
+.grid .footer{
+    background-color: green;
+    grid-area: footer;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "header header header"
+                         "conten conten aside"
+                         "conten conten aside"
+                         "widget1 widget2 widget2"
+                         "footer footer footer";
+}
